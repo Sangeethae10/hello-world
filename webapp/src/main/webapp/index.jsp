@@ -1,44 +1,169 @@
-<header>
-  <nav>
-    <div class="logo">
-      <img src="https://images.unsplash.com/photo-1533794318766-897f4d50cb39?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MDUyMDk&ixlib=rb-1.2.1&q=80">
-    </div>
-    <div class="items">
-      <a href="#" class="active">Home</a>
-      <a href="#">Service</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="other">
-      <button>Log in</button>
-    </div>
-  </nav>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Camel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-<!-- Hero Section -->
-<section>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: "Pacifico", cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
   <div class="container">
-    <div class="row">
-      <div class="info">
-        <p class="short-info">#Get Your 14 Days Free Trial</p>
-        <h2 class="hero-heading">Manage All Of Your Stuff Using A TGB</h2>
-        <p class="hero-sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tincidunt eifend odio viverra diam aliquet donec again.</p>
-        <div class="users">
-          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
-          <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
-          <img src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
-          <img src="https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
-          <p>4M+ users</p>
-        </div>
-        <button class="learn-more">
-          Learn More</button>
+    <header class="header">
+      <h1>Mr. Camel</h1>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
       </div>
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1519326882834-04c334752f58?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MDUxMzU&ixlib=rb-1.2.1&q=80" class="img-fluid">
-      </div>
-    </div>
+    </header>
+    <aside class="left">
+      <img src="./assets/html/mr-camel.jpg" width="160px" />
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <br><br>
+      <p>"Do something important in life. I convert green grass to code."<br>- Mr Camel</p>
+    </aside>
+    <main class="content">
+      <h2>About Me</h2>
+      <p>I don't look like some handsome horse, but I am a real desert king. I can survive days without water.</p>
+      <h2>My Career</h2>
+      <p>I work as a web developer for a company that makes websites for camel businesses.</p>
+      <hr><br>
+      <h2>How Can I Help You?</h2>
+      <table>
+        <tr>
+          <th>SKILL 1</th>
+          <th>SKILL 2</th>
+          <th>SKILL 3</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-broom"></i></td>
+          <td><i class="fas fa-archive"></i></td>
+          <td><i class="fas fa-trailer"></i></td>
+        </tr>
+        <tr>
+          <td>Cleaning kaktus in your backyard</td>
+          <td>Storing some fat for you</td>
+          <td>Taking you through the desert</td>
+        </tr>
+        <tr>
+      </table>
+      <form>
+        <label>Email: <input type="text" name="email"></label><br>
+        <label> Mobile: <input type="text" name="mobile"> </label><br>
+        <label>Message: <textarea name="message" rows="5" cols="30"></textarea></label><br>
+        <input type="submit" value="Submit" /><br>
+      <closeform></closeform></form>
+    </main>
+    <footer class="footer">© Copyright Mr. Camel</footer>
   </div>
-</section>
-<!-- Hero Section Ends -->
+</body>
+
+</html>
